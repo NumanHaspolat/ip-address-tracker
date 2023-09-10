@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--! API -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <!--! API  -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | IP Address Tracker</title>
+  </head>
+  <body>
+    <div class="blue-bg">
+      <h2>IP Address Tracker</h2>
+      <div class="search">
+        <input
+          type="text"
+          class="search-inp"
+          placeholder="Search for any IP address or domain"
+        />
+        <button class="search-btn">
+          <img src="./images/icon-arrow.svg" alt="" />
+        </button>
+      </div>
+    </div>
+
+    <div class="results">
+      <div class="close-results d-none">
+        <i class="fa-solid fa-arrow-up"></i>
+      </div>
+
+      <div class="res">
+        <p>IP Address</p>
+        <p class="ip-res">-----</p>
+      </div>
+      <div class="res">
+        <p>Location</p>
+        <p class="loc-res">-----</p>
+      </div>
+      <div class="res">
+        <p>Timezone</p>
+        <p class="tz-res">-----</p>
+      </div>
+      <div class="res res-none-border">
+        <p>ISP</p>
+        <p class="isp-res">-----</p>
+      </div>
+    </div>
+
+    <div id="harita"></div>
+
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>
